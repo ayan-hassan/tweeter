@@ -1,14 +1,16 @@
 nav {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  height: 120px;
+  width: 100%;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 120px;
-  width: 100%;
+  position: fixed;
   background-color: #4056a1;
   color: #ffffff;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  position: fixed;
+  
 }
 
 nav span {
