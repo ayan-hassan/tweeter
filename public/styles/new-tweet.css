@@ -1,0 +1,31 @@
+.new-tweet {
+  margin-top: 20px;
+}
+
+textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid #545149;
+  height: 65px;
+  width:  100%;
+  margin-bottom: 7px;
+}
+
+textarea:focus {
+  outline: none;
+  
+}
+.button-counter {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive; 
+  height: auto;
+}
+
+.button {
+  background-color: #4056a1;
+  color: #fff;
+  border-style: none;
+  padding-left: 8px;
+  padding-right: 8px;
+}
