@@ -29,3 +29,7 @@ textarea:focus {
   padding-left: 8px;
   padding-right: 8px;
 }
+
+.counter.overTweetLimit {
+  color: red;
+}
