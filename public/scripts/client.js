@@ -6,7 +6,7 @@
 
 
 $(document).ready(function() {
-
+  
   //Prevents XSS attack
   const escape = function(str) {
     let div = document.createElement("div");
