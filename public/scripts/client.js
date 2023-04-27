@@ -6,7 +6,7 @@
 
 
 $(document).ready(function() {
-  
+  $(".err-msg").hide();
   //Prevents XSS attack
   const escape = function(str) {
     let div = document.createElement("div");
@@ -75,17 +75,21 @@ $(document).ready(function() {
   //listens for submit event
   $('.new-tweet form').submit(function(event) {
     event.preventDefault();
+    $(".err-msg").slideUp();
     //serializes form data as a query string
     let $form = $(this);
     const maxTweetLength = 140;
     const newTweetEntered = $form.children('textarea').val();
 
     if (!newTweetEntered) {
-      return alert("Please submit a tweet with at least one character.");
+      $('.err-msg').slideDown();
+      $('.err-msg strong').text("Please submit a tweet with at least one character.");
+      return;
     } else if (newTweetEntered.length > maxTweetLength) {
-      return alert("Tweets must be 140 characters long or shorter.");
+      $('.err-msg').slideDown();
+      $('.err-msg strong').text("Tweets must be 140 characters long or shorter.");
+      return;
     } else {
-      //submits form data POST request to server
       let tweet = $form.serialize();
       $.ajax({ url: "/tweets", method: 'POST', data: tweet });
       tweetSubmitPageRefresh();
