@@ -21,7 +21,7 @@ body > header {
 
 @media screen and (min-width: 900px) {
   body > header {
-    width: 30vw;
+    width: 35vw;
     float: left;
     margin: 170px 0px 0px 50px;
     position: fixed;
