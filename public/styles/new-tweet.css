@@ -56,3 +56,12 @@ textarea:focus {
   margin-top: .8em;
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+@media only screen and (min-width: 900px) {
+  .new-tweet {
+    padding-top: 145px;
+    margin-right: 70px;
+    width: 50vw;
+    float: right;
+  }
+}

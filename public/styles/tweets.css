@@ -67,3 +67,11 @@ article:hover {
 .fa-solid.fa-heart:hover {
   color:rgb(220, 164, 20)
 }
+
+@media only screen and (min-width: 900px) {
+  .tweeter-feed {
+    margin-right: 70px;
+    width: 50vw;
+    float: right;
+  }
+}
