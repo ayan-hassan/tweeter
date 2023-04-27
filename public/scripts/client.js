@@ -70,7 +70,6 @@ const tweetSubmitPageRefresh = () => {
 };
 
 $(document).ready(function() {
-  let maxTweetLength = 140;
   $(".err-msg").hide();
 
   $('.new-tweet form').submit(function(event) {
@@ -78,7 +77,8 @@ $(document).ready(function() {
     $(".err-msg").slideUp();
     let $form = $(this);
 
-    const newTweetEntered = $form.children('textarea').val();
+    let maxTweetLength = 140;
+    const newTweetEntered = $('#tweet-text').val();
 
     if (!newTweetEntered) {
       $('.err-msg').slideDown();
