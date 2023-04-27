@@ -4,8 +4,8 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+
 $(document).ready(function() {
-  
   //takes in an array of tweet objects and then prepends each one to the #tweets-container
   const renderTweets = function(tweets) {
     $('section.tweeter-feed').empty();
@@ -33,7 +33,7 @@ $(document).ready(function() {
         <div class="line">&nbsp;</div>
       </div>
       <footer class="time-icons">
-        <div>6 years ago</div>
+        <div>${timeago.format(tweet.created_at)}</div>
         <div class="icons">
           <i class="fa-solid fa-flag"></i>
           <i class="fa-solid fa-retweet"></i>
