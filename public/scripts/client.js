@@ -4,8 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-//takes in an array of tweet objects and then prepends each one to the #tweets-container
-
 $(document).ready(function() {
 
   const data = [
@@ -33,6 +31,7 @@ $(document).ready(function() {
     }
   ];
   
+  //takes in an array of tweet objects and then prepends each one to the #tweets-container
   const renderTweets = function(tweets) {
     $('section.tweeter-feed').empty();
     for (const tweet of tweets) {
@@ -74,9 +73,12 @@ $(document).ready(function() {
 
   renderTweets(data);
 
+  //listens for submit event
   $('.new-tweet form').submit(function(event) {
     event.preventDefault();
+    //serializes form data as a query string
     let tweet = $(this).serialize();
+    //submits form data POST request to server
     $.ajax({ url: "/tweets", method: 'POST', data: tweet });
     console.log(tweet);
   });
