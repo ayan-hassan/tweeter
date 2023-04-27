@@ -1,6 +1,7 @@
 article {
   border: solid 4px #545149;
   margin-top: 50px;
+  margin-bottom: 50px;
   width: 100%
 }
 
@@ -17,6 +18,16 @@ article:hover {
   margin-bottom: 20px;
 }
 
+.user > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user > div > img {
+  height: auto;
+  width: 40px;
+  padding-right: 8px;
+}
 
 .user-handle {
   color:rgb(180, 174, 174);
@@ -40,11 +51,11 @@ article:hover {
 .time-icons {
   display: flex;
   justify-content: space-between;
-  padding-top: 5px;
+  padding-top: 10px;
   padding-bottom: 20px;
   padding-left: 28px;
   padding-right: 28px;
-  font-size: 0.60em;
+  font-size: 0.53em;
   color: #545149;
 }
 
@@ -56,16 +67,24 @@ article:hover {
   color:rgb(58, 58, 110);
 }
 
+.fa-solid.fa-flag {
+  padding: 0 10px 0 0;
+}
+
+.fa-solid.fa-retweet {
+  padding: 0 10px 0 0 ;
+}
+
 .fa-solid.fa-flag:hover {
-  color:rgb(220, 164, 20)
+  color:rgb(220, 164, 20);
 }
 
 .fa-solid.fa-retweet:hover {
-  color:rgb(220, 164, 20)
+  color:rgb(220, 164, 20);
 }
 
 .fa-solid.fa-heart:hover {
-  color:rgb(220, 164, 20)
+  color:rgb(220, 164, 20);
 }
 
 @media only screen and (min-width: 900px) {
