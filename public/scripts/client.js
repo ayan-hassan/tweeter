@@ -21,7 +21,7 @@ const renderTweets = function(tweets) {
   }
 };
 
-//takes in tweetObj, returns <article> element with HTML structure of tweet
+//takes in tweet object, returns <article> element with HTML structure of tweet
 const createTweetElement = (tweet) => {
   const $tweet = $("<article>").addClass("tweet");
 
@@ -47,6 +47,7 @@ const createTweetElement = (tweet) => {
       </div>
     </footer>
     `;
+
   $tweet.append(tweetBox);
   return $tweet;
 };
@@ -69,24 +70,23 @@ const tweetSubmitPageRefresh = () => {
 };
 
 $(document).ready(function() {
-  const maxTweetLength = 140;
+  let maxTweetLength = 140;
   $(".err-msg").hide();
-  //listens for submit event
+
   $('.new-tweet form').submit(function(event) {
     event.preventDefault();
     $(".err-msg").slideUp();
-    //serializes form data as a query string
     let $form = $(this);
-    
+
     const newTweetEntered = $form.children('textarea').val();
 
     if (!newTweetEntered) {
       $('.err-msg').slideDown();
-      $('.err-msg strong').text("Please submit a tweet with at least one character :)");
+      $('.err-msg strong').text("Please submit a tweet with at least one character.");
       return;
     } else if (newTweetEntered.length > maxTweetLength) {
       $('.err-msg').slideDown();
-      $('.err-msg strong').text("Tweets must be 140 characters long or shorter :)");
+      $('.err-msg strong').text("Tweets must be 140 characters long or shorter.");
       return;
     } else {
       let tweet = $form.serialize();
@@ -94,6 +94,7 @@ $(document).ready(function() {
       tweetSubmitPageRefresh();
     }
   });
-  
+
   loadTweets();
+
 });
