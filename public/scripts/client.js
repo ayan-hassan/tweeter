@@ -6,6 +6,14 @@
 
 
 $(document).ready(function() {
+
+  //Prevents XSS attack
+  const escape = function(str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   //takes in an array of tweet objects and then prepends each one to the #tweets-container
   const renderTweets = function(tweets) {
     $('section.tweeter-feed').empty();
@@ -29,7 +37,7 @@ $(document).ready(function() {
         <div class="user-handle">${tweet.user.handle}</div>
       </header>
       <div class="tweet-content">
-        <p>${tweet.content.text}</p>
+        <p>${escape(tweet.content.text)}</p>
         <div class="line">&nbsp;</div>
       </div>
       <footer class="time-icons">
@@ -57,7 +65,7 @@ $(document).ready(function() {
 
   //loads submitted tweets without refreshing
   const tweetSubmitPageRefresh = () => {
-    let maxTweetLength = 140;
+    const maxTweetLength = 140;
     $('textarea').val('');
     $('.counter').text(maxTweetLength);
     loadTweets("/tweets", "GET", renderTweets);
