@@ -2,23 +2,25 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+Tweet to your heart's delight - but make sure your tweet is 140 characters long or shorter or the app may not be happy with you! If you get lost down the app reading tweets, a scroll-up button will be there to help you back up as well. Tweeter works well on mobile and desktop!
+
+Provides a demonstration of HTML, CSS, JS, jQuery and AJAX front-end skills, and Node, Express back-end skills.
 
 <em>Screenshot of URLs page when user isn't logged in</em>
 
-!["Screenshot of desktop version of app"](https://github.com/ayan-hassan/tiny-app/blob/main/docs/urls%20page(not%20logged%20in).png?raw=true)
+!["Screenshot of desktop version of app"](https://github.com/ayan-hassan/tweeter/blob/master/docs/Screenshot%202023-04-27%20at%209.49.56%20PM.png?raw=true)
 
 <em>Screenshot of the register page</em>
 
-!["Screenshot of mobile version of app"](https://github.com/ayan-hassan/tiny-app/blob/main/docs/register-page.png?raw=true)
+!["Screenshot of mobile version of app"](https://github.com/ayan-hassan/tweeter/blob/master/docs/Screenshot%202023-04-27%20at%209.50.37%20PM.png?raw=true)
 
 <em>Screenshot of the login page</em>
 
-!["Screenshot of mobile version of app with scroll up error"](https://github.com/ayan-hassan/tiny-app/blob/main/docs/login-page.png?raw=true)
+!["Screenshot of mobile version of app with scroll up error"](https://github.com/ayan-hassan/tweeter/blob/master/docs/Screenshot%202023-04-27%20at%209.51.41%20PM.png?raw=true)
 
 <em>Screenshot of page to add new tinyURL</em>
 
-!["Screenshot of mobile version of app with error"](https://github.com/ayan-hassan/tiny-app/blob/main/docs/add-url.png?raw=true)
+!["Screenshot of mobile version of app with error"](https://github.com/ayan-hassan/tweeter/blob/master/docs/Screenshot%202023-04-27%20at%209.52.18%20PM.png?raw=true)
 
 ## Getting Started
 
