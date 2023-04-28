@@ -57,7 +57,7 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav id="navbar">
-      <span>tweeter <i class="fa-solid fa-dove"></i></span>
+      <span id="tweeter">tweeter <i class="fa-solid fa-dove"></i></span>
       <div class="new-tweet-link">
         <span class="write-tweet"><strong>Write</strong> a new tweet</span>
         <div>
@@ -83,7 +83,7 @@
           <span><strong></strong></span>
           <i class="fa-solid fa-triangle-exclamation"></i>
         </div>
-        <form action="/tweets" method="POST">
+        <form id="tweet-form-box" action="/tweets" method="POST">
           <div class="tweet-form">
             <label for="tweet-text"></label>
             <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>

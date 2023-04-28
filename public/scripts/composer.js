@@ -13,7 +13,8 @@ $(document).ready(function() {
   });
   // when clicked, page scrolls to top
   $('#scroll-up').on('click', function() {
-    $(window).scrollTo($('#scrollhere'), 600);
+    $(window).scrollTo($('#tweeter'), 500);
+    $('form').slideDown();
     $('textarea').focus();
   });
 });
