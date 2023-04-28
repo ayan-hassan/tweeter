@@ -41,6 +41,7 @@ article:hover {
 .tweet-content > p {
   margin: auto;
   padding-left: 15px;
+  word-break: break-word;
 }
 
 .line {
