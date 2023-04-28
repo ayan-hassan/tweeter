@@ -27,6 +27,26 @@ main.container {
   margin: 0 auto;
 }
 
+#scroll-up {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  height: 75px;
+  width: 75px;
+  font-size: 18px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.fa-sharp.fa-solid.fa-angles-up {
+  font-size: 30px;
+}
+
 @media (min-width: 900px) {
   main {
     margin: 120px 50px 50px 140px;

@@ -33,6 +33,7 @@ nav span {
   color: red;
   background-color: transparent;
   border: none; 
+  cursor: pointer;
   animation: bounce 1.0s ease-in-out infinite;
   animation-direction: alternate-reverse;
 }

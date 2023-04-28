@@ -44,6 +44,9 @@
     <!-- Form Toggle JS -->
     <script type="text/javascript" src="/scripts/form-toggle.js"></script>
 
+    <!-- Scroll Up JS -->
+    <script type="text/javascript" src="/scripts/composer.js"></script>
+
     <!-- Time Ago JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
@@ -53,13 +56,13 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
+    <nav id="navbar">
       <span>tweeter <i class="fa-solid fa-dove"></i></span>
       <div class="new-tweet-link">
         <span class="write-tweet"><strong>Write</strong> a new tweet</span>
         <div>
           <button id="button" class="toggle-btn" type="button">
-          <i class="fa-sharp fa-solid fa-angles-down"></i>
+            <i class="fa-sharp fa-solid fa-angles-down"></i>
           </button>
         </div>
       </div>
@@ -92,6 +95,9 @@
         </form>
       </section>
       <section class="tweeter-feed"></section>
+      <button id="scroll-up" type="button">
+        <i class="fa-sharp fa-solid fa-angles-up"></i>
+      </button>
     </main>
   </body>
 </html>
