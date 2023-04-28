@@ -90,8 +90,16 @@ $(document).ready(function() {
       return;
     } else {
       let tweet = $form.serialize();
-      $.ajax({ url: "/tweets", method: 'POST', data: tweet });
-      tweetSubmitPageRefresh();
+      $.ajax({
+        url: "/tweets",
+        method: 'POST',
+        data: tweet,
+        success: () => {
+          tweetSubmitPageRefresh();
+        }
+      }).catch((err) => {
+        console.log("Error: ", err.message);
+      });
     }
   });
 
