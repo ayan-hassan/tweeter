@@ -6,19 +6,19 @@ Tweet to your heart's delight - but make sure your tweet is 140 characters long 
 
 Provides a demonstration of HTML, CSS, JS, jQuery and AJAX front-end skills, and Node, Express back-end skills.
 
-<em>Screenshot of URLs page when user isn't logged in</em>
+<em>Screenshot of desktop version of app</em>
 
 !["Screenshot of desktop version of app"](https://github.com/ayan-hassan/tweeter/blob/master/docs/Screenshot%202023-04-27%20at%209.49.56%20PM.png?raw=true)
 
-<em>Screenshot of the register page</em>
+<em>Screenshot of mobile version of app</em>
 
 !["Screenshot of mobile version of app"](https://github.com/ayan-hassan/tweeter/blob/master/docs/Screenshot%202023-04-27%20at%209.50.37%20PM.png?raw=true)
 
-<em>Screenshot of the login page</em>
+<em>Screenshot of mobile version of app with scroll up button</em>
 
-!["Screenshot of mobile version of app with scroll up error"](https://github.com/ayan-hassan/tweeter/blob/master/docs/Screenshot%202023-04-27%20at%209.51.41%20PM.png?raw=true)
+!["Screenshot of mobile version of app with scroll up button"](https://github.com/ayan-hassan/tweeter/blob/master/docs/Screenshot%202023-04-27%20at%209.51.41%20PM.png?raw=true)
 
-<em>Screenshot of page to add new tinyURL</em>
+<em>Screenshot of mobile version of app with error</em>
 
 !["Screenshot of mobile version of app with error"](https://github.com/ayan-hassan/tweeter/blob/master/docs/Screenshot%202023-04-27%20at%209.52.18%20PM.png?raw=true)
 
